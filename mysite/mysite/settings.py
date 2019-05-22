@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_telegram_login',
     'blog'
 ]
 
@@ -67,6 +68,11 @@ TEMPLATES = [
         },
     },
 ]
+
+TELEGRAM_BOT_NAME = 'SaintPeterDjangoLoginBot'
+TELEGRAM_BOT_TOKEN = '845193540:AAHonerwb5_5bMCcQf3hJnlZDeS8e8KebhI'
+TELEGRAM_LOGIN_REDIRECT_URL = 'http://rinsgray.pythonanywhere.com/'
+
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
